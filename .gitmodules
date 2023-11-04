@@ -1,0 +1,6 @@
+[submodule "tools/grim"]
+	path = tools/screenshot/grim
+	url = https://git.sr.ht/~emersion/grim
+[submodule "tools/screenshot/slurp"]
+	path = tools/screenshot/slurp
+	url = https://github.com/emersion/slurp.git
