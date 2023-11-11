@@ -4,3 +4,6 @@
 [submodule "tools/screenshot/slurp"]
 	path = tools/screenshot/slurp
 	url = https://github.com/emersion/slurp.git
+[submodule "tools/editor/vim-config"]
+	path = tools/editor/vim-config
+	url = https://github.com/maxmbed/vim-config.git
