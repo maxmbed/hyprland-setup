@@ -7,3 +7,6 @@
 [submodule "tools/editor/vim-config"]
 	path = tools/editor/vim-config
 	url = https://github.com/maxmbed/vim-config.git
+[submodule "shell/omz"]
+	path = shell/omz
+	url = https://github.com/maxmbed/omz-config.git
