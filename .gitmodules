@@ -10,3 +10,6 @@
 [submodule "shell/omz"]
 	path = shell/omz
 	url = https://github.com/maxmbed/omz-config.git
+[submodule "tools/terminal/tmux-config"]
+	path = tools/terminal/tmux-config
+	url = https://github.com/maxmbed/tmux-config.git
