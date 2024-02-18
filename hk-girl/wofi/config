@@ -1,0 +1,28 @@
+sort_order=alphabetical
+
+# Style
+style=style.css
+show=drun
+
+# Location
+location=center
+orientation=vertical
+#xoffset=0
+#yoffset=-48
+
+# Shape
+width=400
+height=400
+layer=overlay
+hide_search=false
+
+# Search
+prompt=コマンドを入力してください
+dynamic_lines=true
+always_parse_args=true
+show_all=false
+print_command=true
+insensitive=true
+content_halign=left
+allow_images=false
+

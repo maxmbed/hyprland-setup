@@ -1,0 +1,62 @@
+@import "../style-sheet/rose-pine-moon.css";
+
+* {
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+window#waybar {
+  color: @cyan;
+  background-color: rgba(57, 53, 82, 0.5);
+  border: 2px solid alpha(@border, 1.0);
+}
+
+tooltip {
+  background: rgba(57, 53, 82 , 1.0);
+  border: 1px solid alpha(@border, 1.0);
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 6px 18px;
+  margin: 6px 3px;
+  border-radius: 30px;
+  color: @red;
+  background-color: @black;
+}
+
+
+#workspaces button.active {
+  background-color: rgba(196, 167, 231, 0.6);
+}
+
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background-color: rgba(196, 167, 231, 0.8);
+}
+
+
+#battery {
+  color: @yellow;
+}
+
+#clock {
+  color: @magenta;
+}
+
+#backlight {
+  color: @green;
+}
+
+#network {
+  color: @blue;
+}
+
+#pulseaudio {
+  color: @red;
+}

@@ -1,0 +1,60 @@
+@import "../style-sheet/rose-pine-moon.css";
+
+window {
+  margin: 2px;
+  border: 2px solid @cyan;
+  border-radius: 30px;
+  background-color: @black;
+  font-size: 18px;
+}
+
+#input {
+  margin: 15px;
+  border: 1px solid @black;
+  border-radius: 30px;
+  color: @white;
+  font-weight: bold;
+}
+
+#input image {
+	color: @white;
+}
+
+#inner-box {
+  margin: 5px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+#outer-box {
+  margin: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+#scroll {
+  margin: 2px;
+  border: none;
+}
+
+#text {
+  margin: 5px;
+  border: none;
+  color: @white;
+} 
+
+#entry:selected {
+	background-color: @green;
+	font-weight: normal;
+	border-radius: 30px;
+}
+
+#text:selected {
+	background-color: transparent;
+	color: #080808;
+	font-weight: normal;
+}

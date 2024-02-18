@@ -1,0 +1,32 @@
+/* Inspired by from:
+ *
+ * name: Rosé Pine Moon
+ * author: mvllow
+ * license: MIT
+ * upstream: https://github.com/rose-pine/kitty/blob/main/dist/rose-pine-moon.conf
+ * blurb: All natural pine, faux fur and a bit of soho vibes for the classy minimalist
+ */
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #6e6a86;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+
+@define-color black    #393552;
+@define-color red      #eb6f92;
+@define-color green    #3e8fb0;
+@define-color yellow   #f6c177;
+@define-color blue     #9ccfd8;
+@define-color magenta  #c4a7e7;
+@define-color cyan     #ea9a97;
+@define-color white    #e0def4;
