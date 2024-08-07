@@ -1,0 +1,131 @@
+{
+    "position": "top",
+    "layer": "top", 
+    "height": 36,   
+    
+    "width": 1280, 
+    "spacing": 16, 
+   
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+ 
+    "modules-right": [
+        "pulseaudio",
+        "pulseaudio/slider", 
+        "cava",
+        "network", 
+        "backlight", 
+        "battery", 
+        "clock", 
+        "tray"
+     ],
+    
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "format": "{icon}",
+        "format-icons": {
+             // "active": "",
+             // "default": "",
+             "1": "ꡀ",
+             "2": "ꡁ",
+             "3": "ꡂ",
+             "4": "ꡃ",
+             "5": "ꡄ",
+             "6": "ꡅ",
+             "7": "ꡆ",
+             "8": "ꡩ",
+             "9": "ꡇ",
+             "10": "ꡩ",
+         },
+         "persistent-workspaces": {
+             "1": [],
+             "2": [],
+             "3": [],
+             "4": [],
+             "5": [],
+         },
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format" : "ꡙ {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": [""]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "ꡐ {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        "scroll-step": 0.7,
+        "format": "ꡔ {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "ꡟ {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+    "cava": {
+            //"cava_config": "/home/$USER/.config/cava/config",
+            "framerate": 50,
+            "autosens": 1,
+            //"sensitivity": 5,
+            "hide_on_silence": true,
+            "bars": 8,
+            "lower_cutoff_freq": 50,
+            "higher_cutoff_freq": 10000,
+            "method": "pipewire",
+            "source": "auto",
+            "stereo": true,
+            "reverse": false,
+            "bar_delimiter": 0,
+            "monstercat": false,
+            "waves": false,
+            "noise_reduction": 0.77,
+            "input_delay": 2,
+            "monstercat": true,
+            "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+            "actions": {
+                       "on-click-right": "mode"
+                       }
+        }
+}

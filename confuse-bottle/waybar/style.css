@@ -1,0 +1,81 @@
+@import "../style-sheet/nord-cust.css";
+
+* {
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+window#waybar {
+  color: #3F626B;
+  background-color: rgba(57, 53, 82, 0.5);
+  border: 2px solid alpha(@border, 1.0);
+}
+
+tooltip {
+  background: rgba(57, 53, 82 , 1.0);
+  border: 1px solid alpha(@border, 1.0);
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 6px 18px;
+  margin: 6px 3px;
+  border-radius: 30px;
+  color: #CE8D75;
+  background-color: rgba(170, 139, 124, 0.6);
+}
+
+
+#workspaces button.active {
+  background-color: rgba(170, 139, 124, 0.9);
+}
+
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background-color: rgba(136,192, 208, 0.8);
+}
+
+
+#battery {
+  color: @yellow;
+}
+
+#clock {
+  color: @magenta;
+}
+
+#backlight {
+  color: @green;
+}
+
+#network {
+  color: @blue;
+}
+
+#pulseaudio {
+  color: @cyan;
+}
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    background-color: @black;
+}
+#pulseaudio-slider highlight {
+    min-width: 1px;
+    border-radius: 5px;
+    background-color: @cyan;
+}
